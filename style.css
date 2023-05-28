@@ -1,0 +1,76 @@
+.sidebar-toggle {
+    border: none;
+    background-color: transparent;
+    color: grey;
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar-toggle:hover {
+    transform: scale(1.25);
+    color: teal;
+}
+
+.side-bar--header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+
+.side-bar--header span {
+    color: teal;
+    font-weight: bold;
+}
+
+.close-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: crimson;
+    transition: all 0.5s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.5);
+}
+
+.side-bar {
+    border: 1px solid grey;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: all 0.5s ease;
+    transform: translate(-100%);
+}
+
+.side-bar.show {
+    transform: translate(0);
+}
+
+.links-container {
+    list-style: none;
+}
+
+li a{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+}
+
+li a:hover {
+    color: seagreen;
+    transform: scale(1.1);
+}
